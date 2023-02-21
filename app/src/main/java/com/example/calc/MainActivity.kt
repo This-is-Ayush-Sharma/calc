@@ -68,6 +68,9 @@ class MainActivity : AppCompatActivity() {
                 disp.text = ""
                 disp.hint = "0."
             }
+            dec.setOnClickListener {
+                disp.text = disp.text.toString() + "."
+            }
             back.setOnClickListener {
                 if(disp.text.toString().length > 0)
                 {

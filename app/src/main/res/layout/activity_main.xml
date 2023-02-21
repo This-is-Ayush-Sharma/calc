@@ -44,7 +44,8 @@
                 android:layout_height="80dp"
                 android:layout_margin="3dp"
                 android:layout_weight="1"
-                android:textSize="20dp"
+
+                android:textSize="25dp"
                 android:text="1" />
 
             <Button
@@ -52,7 +53,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
                 android:layout_weight="1"
-                android:textSize="20dp"
+                android:textSize="25dp"
                 android:layout_margin="3dp"
                 android:text="2" />
 
@@ -61,7 +62,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
                 android:layout_weight="1"
-                android:textSize="20dp"
+                android:textSize="25dp"
                 android:layout_margin="3dp"
                 android:text="3" />
 
@@ -70,7 +71,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
                 android:layout_weight="1"
-                android:textSize="20dp"
+                android:textSize="25dp"
                 android:layout_margin="3dp"
                 android:text="+" />
         </LinearLayout>
@@ -86,7 +87,7 @@
                 android:layout_height="80dp"
                 android:layout_margin="3dp"
                 android:layout_weight="1"
-                android:textSize="20dp"
+                android:textSize="25dp"
                 android:text="4" />
 
             <Button
@@ -94,7 +95,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
                 android:layout_weight="1"
-                android:textSize="20dp"
+                android:textSize="25dp"
                 android:layout_margin="3dp"
                 android:text="5" />
 
@@ -103,7 +104,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
                 android:layout_weight="1"
-                android:textSize="20dp"
+                android:textSize="25dp"
                 android:layout_margin="3dp"
                 android:text="6" />
 
@@ -112,7 +113,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
                 android:layout_weight="1"
-                android:textSize="20dp"
+                android:textSize="25dp"
                 android:layout_margin="3dp"
                 android:text="-" />
         </LinearLayout>
@@ -128,7 +129,7 @@
                 android:layout_height="80dp"
                 android:layout_margin="3dp"
                 android:layout_weight="1"
-                android:textSize="20dp"
+                android:textSize="25dp"
                 android:text="7" />
 
             <Button
@@ -136,7 +137,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
                 android:layout_weight="1"
-                android:textSize="20dp"
+                android:textSize="25dp"
                 android:layout_margin="3dp"
                 android:text="8" />
 
@@ -145,7 +146,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
                 android:layout_weight="1"
-                android:textSize="20dp"
+                android:textSize="25dp"
                 android:layout_margin="3dp"
                 android:text="9" />
 
@@ -154,7 +155,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
                 android:layout_weight="1"
-                android:textSize="20dp"
+                android:textSize="25dp"
                 android:layout_margin="3dp"
                 android:text="*" />
         </LinearLayout>
@@ -168,7 +169,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
                 android:layout_weight="1"
-                android:textSize="20dp"
+                android:textSize="25dp"
                 android:layout_margin="3dp"
                 android:text="/" />
 
@@ -177,7 +178,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
                 android:layout_weight="1"
-                android:textSize="20dp"
+                android:textSize="25dp"
                 android:layout_margin="3dp"
                 android:text="%" />
 
@@ -186,7 +187,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
                 android:layout_weight="1"
-                android:textSize="20dp"
+                android:textSize="25dp"
                 android:layout_margin="3dp"
                 android:text="^" />
 
@@ -195,7 +196,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="80dp"
                 android:layout_weight="1"
-                android:textSize="20dp"
+                android:textSize="25dp"
                 android:layout_margin="3dp"
                 android:text="0" />
         </LinearLayout>
@@ -204,12 +205,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dec"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:textSize="25dp"
+            android:layout_margin="3dp"
+            android:text="." />
+
         <Button
             android:id="@+id/clr"
             android:layout_width="wrap_content"
             android:layout_height="80dp"
             android:layout_weight="1"
-            android:textSize="20dp"
+            android:textSize="22dp"
             android:layout_margin="3dp"
             android:text="Clear" />
         <Button
@@ -217,7 +228,7 @@
             android:layout_width="wrap_content"
             android:layout_height="80dp"
             android:layout_weight="1"
-            android:textSize="20dp"
+            android:textSize="22dp"
             android:layout_margin="3dp"
             android:text="Backspace"
              />
@@ -230,6 +241,7 @@
                 android:id="@+id/opeq"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
+                android:textSize="25dp"
                 android:text="=" />
         </LinearLayout>
     </LinearLayout>
