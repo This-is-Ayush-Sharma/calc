@@ -1,6 +1,7 @@
 package com.example.calc
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.example.calc.databinding.ActivityMainBinding
@@ -13,6 +14,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this,R.layout.activity_main)
         with(binding){
+            ze.setOnClickListener {
+                disp.text = disp.text.toString() + "0"
+            }
             btn1.setOnClickListener {
                 disp.text = disp.text.toString() + "1"
             }
@@ -77,9 +81,21 @@ class MainActivity : AppCompatActivity() {
             }
             opeq.setOnClickListener {
                 val exp = disp.text.toString()
-                val expbuild = ExpressionBuilder(exp).build()
-                val result = expbuild.evaluate()
-                disp.text=result.toString()
+                if(exp.isNotEmpty()){
+                    val expbuild = ExpressionBuilder(exp).build()
+                    try {
+                        val result = expbuild.evaluate()
+                        disp.text = result.toString()
+                    }
+                    catch (e: java.lang.IllegalArgumentException){
+                        Toast.makeText(this@MainActivity, "You never disappoint to disappoint", Toast.LENGTH_SHORT).show()
+                    }
+                }
+                else
+                {
+                    Toast.makeText(this@MainActivity, "Can't Evaluate empty Expression", Toast.LENGTH_SHORT).show()
+                }
+
             }
          }
     }
